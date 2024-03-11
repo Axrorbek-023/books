@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 body{
+    /* background-color: rgb(63, 61, 61); */
     background: url('../img/fon.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -21,9 +22,13 @@ a{
 section{
     margin-top: 100px;
 }
-h1{
+.Request{
     text-align: center;
     margin-top: 80px;
+    color: white;
+}
+.h1{
+    font-size: 25px;
     color: white;
 }
 .box{
@@ -46,6 +51,9 @@ h1{
         margin: 0 auto;
     }
 }
+.box2{
+    background-color: rgb(97, 97, 97);
+}
 
 input{
     height: 25px;
@@ -53,7 +61,7 @@ input{
     border: none;
     text-align: center;
 }
-button{
+.btnn{
     margin-bottom: 20px;
     background-color: rgb(23, 23, 219);
     color: white;
@@ -62,7 +70,7 @@ button{
     height: 30px;
     border-radius: 10px;
 }
-button:hover{
+.btnn:hover{
     color: rgb(23, 23, 219);
     font-weight: 400px;
     background-color: #fff;

@@ -10,16 +10,42 @@
 <body>
     <section>
         <div class="container">
-            <h1>Request books</h1>
+            <h1 class="Request">Request books</h1>
             <div class="box">
                 <form onsubmit="setBooks(event)" action="#">
                     <input type="text" placeholder="title" name="title">
                     <input type="text" placeholder="img" name="img">
                     <input type="text" placeholder="price" name="price">
-                    <button type="submit">save</button>
+                    <button class="btnn" type="submit">save</button>
                 </form>
             </div>
             <ul class="list"></ul>
+            
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-2" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="box box2 h-100">
+                <form onsubmit="bookEdit(event)" action="#">
+                    <input type="text" placeholder="title" name="title">
+                    <input type="text" placeholder="img" name="img">
+                    <input type="text" placeholder="price" name="price">
+                    <div class="modal-footer ">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">edit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
         </div>
     </section>
 </body>
